@@ -8,11 +8,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  /*sfondo della barra di navigazioine*/
   .barra_di_navigazione {
     overflow: hidden;
     background-color: #333;
   }
   
+  /* Stili all'interno della barra di navigazione */
   .barra_di_navigazione a {
     float: left;
     display: block;
@@ -23,29 +25,29 @@ body{
     font-size: 17px;
   }
   
+  /* Campio colore al passaggio del mause */
   .barra_di_navigazione a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+ 
+  /* Cambia colore alla pagina del menù in cui sei dentro */
   .barra_di_navigazione a.active {
     background-color: #04AA6D;
     color: white;
   }
   
+  /*Nascondi i link delle pagine collegate al menù*/
   .barra_di_navigazione .icon {
     display: none;
   }
   
+
   @media screen and (max-width: 600px) {
     .barra_di_navigazione a:not(:first-child) {display: none;}
     .barra_di_navigazione a.icon {
       float: right;
-      display: block;
-      margin-top: 10px;
-      margin-bottom: 100px;
-      margin-right: 150px;
-      margin-left: 80px;
+      display: block;   
     }
   }
   
@@ -63,9 +65,20 @@ body{
     }
   }
 
-
-
-
+  .barra_di_navigazione {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .barra_di_navigazione a {
+    font-size: 20px;
+    padding: 18px 24px;
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+  }
 
 
 
